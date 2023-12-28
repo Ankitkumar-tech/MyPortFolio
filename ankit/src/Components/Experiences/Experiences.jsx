@@ -1,80 +1,74 @@
-import React, { useContext } from 'react';
-import { ThemeContext } from '../../ContextProvider/ThemeContext';
+import React, { useContext } from "react";
+import styles from "./Experiences.module.css";
+import { ThemeContext } from "../../ContextProvider/ThemeContext";
 // import styles from './Experiences.module.css';
 
 const Experiences = () => {
-	const { newTheme } = useContext(ThemeContext);
-	return (
-		<div className="ab">
-			{/* <h1
-				style={{ color: `${newTheme.title}` }}
-				className={styles.heading}
-			>
-				Experience
-			</h1> */}
-			{/* <div className={styles.borderBottom} />
+  const { newTheme } = useContext(ThemeContext);
+  return (
+    <div className="ab">
+      <h1 style={{ color: `${newTheme.title}` }} className={styles.heading}>
+        Experience
+      </h1>
+      <div className={styles.borderBottom} />
 
-			<div className={styles.container}>
-				<div className={styles.position}>
-				Utility Engineer  | Mechanical Engineering{' '}
-					<a href=''>  Govindjee Dairy Pvt. Ltd, Jaipur</a>
-				</div>
-				<div className={styles.date}>January 2020 - October 2020</div>
-				<fieldset className={styles.responsibilites}>
-					<legend>
-						<h3> Roles & responsibilites </h3>
-					</legend>
-					<ul>
-						<li>
-							My role was to  Monitoring of boiler operation & Performing regular maintenance of boiler. 
-                           </li>
-						<li>
-						Monitoring Ammonia Refrigeration system as well as cold chain unit. 
-						</li>
-						<li>
-						Responding to breakdown ,malfunctions and analysis
-							</li>
-							<li>
-							Etp operation and monitoring 
+      <div className={styles.container}>
+        <div className={styles.position}>
+          Software Engineer <a href=""> Masai School ,Banglore</a>
+        </div>
+        <div className={styles.date}>Sep 2022 - Current</div>
+        <fieldset className={styles.responsibilites}>
+          <legend>
+            <h3> Roles & responsibilites </h3>
+          </legend>
+          <ul>
+            <li>
+              Engineered and maintained LMS dashboard interfaces using React and
+              TypeScript.
+            </li>
+            <li>
+              Deployed real-time notifications using RTK Query, boosting user
+              engagement by 40%
+            </li>
+            <li>
+              Collaborated closely with multidisciplinary teams to gather
+              requirements, conduct feature enhancements
+            </li>
+            {/* <li>Etp operation and monitoring</li> */}
+          </ul>
+        </fieldset>
+      </div>
 
-							</li>
-					
-					</ul>
-				</fieldset>
-			</div> */}
+      <br />
 
-			<br/>
-
-			{/* <div className={styles.container}>
-				<div className={styles.position}>
-				JR MECHANICAL | Mechanical Engineering{' '}
-					<a href='/'>DS GROUP (DAIRY DIVISION) REENGUS </a>
-				</div>
-				<div className={styles.date}>August 2018 - December 2019</div>
-				<fieldset className={styles.responsibilites}>
-					<legend>
-						<h3> Roles & responsibilites </h3>
-					</legend>
-					<ul>
-						<li>
-						Monitoring of utility operations 
-
-							
-						</li>
-						<li>Carrying out of Predictive, Preventive maintenance & Breakdown maintenance, planning & execution. 
-							
-						</li>
-						<li>
-						Work as team member of the shift maintenance group & involve in the problem solving activities in plant.
-
-						</li>
-					
-					</ul>
-				</fieldset>
-			</div> */}
-
-		</div>
-	);
+      <div className={styles.container}>
+        <div className={styles.position}>
+          Instructional Associate <a href="/">Masai School</a>
+        </div>
+        <div className={styles.date}>May 2022 - Sep-2022</div>
+        <fieldset className={styles.responsibilites}>
+          <legend>
+            <h3> Roles & responsibilites </h3>
+          </legend>
+          <ul>
+            <li>
+              Delivered 100+ group and 500+ one-on-one sessions on DSA, React,
+              and advanced JavaScript to 800+ students within the timeline.
+            </li>
+            <li>
+              Provided personalized support to students, offering guidance on
+              coding concepts and project development
+            </li>
+            <li>
+              Contributed significantly to developing course materials,
+              increasing student engagement and comprehension by 15% through
+              dynamic assignments, quizzes, and projects.
+            </li>
+          </ul>
+        </fieldset>
+      </div>
+    </div>
+  );
 };
 
 export default Experiences;
